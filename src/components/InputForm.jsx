@@ -11,6 +11,7 @@ const InputForm =forwardRef( (props,ref) => {
 onSubmit={(e)=>{
     e.preventDefault()
     dispatch({type:'ADD_ITEM',payload:{id:Date.now(),item}})
+    setItem('')
 }}
       
       action="" className='max-w-md mx-auto bg-slate-200 rounded-lg flex justify-between items-center'>
