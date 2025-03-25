@@ -37,8 +37,7 @@ function App() {
   console.log(listState);
 
   useEffect(()=>{
-    const savedTodos = JSON.parse(localStorage.getItem('todos')) 
-    console.log(savedTodos)
+    const savedTodos = JSON.parse(localStorage.getItem('todos')) || []
     if(savedTodos.length>0){
       dispatch({type: 'LOAD_ITEMS', payload: savedTodos})
     }
