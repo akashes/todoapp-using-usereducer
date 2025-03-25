@@ -6,7 +6,7 @@ const ListItems = ({listItems}) => {
   console.log(listItems)
   return (
     <div>
-  <ul className='max-w-md mx-auto bg-gray-200  my-5'> 
+  <ul className='max-w-md mx-auto w-[100%] bg-gray-200  my-5'> 
   {
     listItems.length>0 && listItems.map(({id,item},i)=>{
       return(

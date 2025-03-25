@@ -23,7 +23,7 @@ onSubmit={(e)=>{
 onClick={()=>dispatch({type:'RESET'})}
 
 // onClick={props.handleReset}
- className='px-4 py-2 rounded-lg shadow-sm bg-black text-white '>Reset</button>
+ className='px-4 py-2 max-w-sm block my-2 mx-auto rounded-lg shadow-sm bg-black text-white '>Reset</button>
 
     </>
   )
